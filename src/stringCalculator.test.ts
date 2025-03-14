@@ -10,4 +10,11 @@ describe("test suite for the string calculator", () => {
     const num = faker.number.int({ min: 0, max: 999999 });
     expect(add(num.toString())).toBe(num);
   });
+
+  test("returns the sum for multiple numbers", () => {
+    const num = Array.from({ length: 5 }, () =>
+      faker.number.int({ min: 0, max: 999999 })
+    );
+    expect(add(num.join(","))).toBe(num.reduce((sum, num) => sum + num, 0));
+  });
 });
