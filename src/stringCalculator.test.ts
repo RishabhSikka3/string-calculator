@@ -17,4 +17,8 @@ describe("test suite for the string calculator", () => {
     );
     expect(add(num.join(","))).toBe(num.reduce((sum, num) => sum + num, 0));
   });
+
+  test("handles new line as a delimiter along with commas", () => {
+    expect(add("1\n2,3")).toBe(6);
+  });
 });
