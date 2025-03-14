@@ -20,5 +20,7 @@ Clone the repository:
 git clone https://github.com/RishabhSikka3/string-calculator.git
 cd string-calculator
 npm install
-node stringCalculator.ts
+
+## **To run the code and test cases**
+npm start
 npm test
