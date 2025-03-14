@@ -1,3 +1,4 @@
 export const add = (numbers: string): number => {
-  return 0;
+  if (numbers.length === 0) return 0;
+  return parseInt(numbers);
 };
