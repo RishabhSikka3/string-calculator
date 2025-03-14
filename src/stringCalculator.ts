@@ -17,3 +17,10 @@ export const add = (numbers: string): number => {
 
   return numArray.reduce((sum, num) => sum + num, 0);
 };
+
+console.log(add(""));
+console.log(add("1"));
+console.log(add("1,2"));
+console.log(add("1\n2,3"));
+console.log(add("//;\n1;2"));
+console.log(add("1,2,-3,-4"));
